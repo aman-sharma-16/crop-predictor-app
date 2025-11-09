@@ -640,9 +640,19 @@ if not st.session_state.logged_in:
     st.markdown("<div class='floating-icon'></div>", unsafe_allow_html=True)
     st.title("🌾 Smart Crop Predictor")
     st.subheader("Login to continue")
+    st.markdown(
+        """
+    <style>
+    div[data-testid="stTextInput"] {
+        width: 300px;  /* Set your desired width */
+    }
+    </style>
+    """,
+        unsafe_allow_html=True,
+    )
 
-    username = st.text_input("👤 Username", width=300)
-    password = st.text_input("🔒 Password", type="password", width=300)
+    username = st.text_input("👤 Username")
+    password = st.text_input("🔒 Password", type="password")
     login_btn = st.button("Login")
 
     if login_btn:

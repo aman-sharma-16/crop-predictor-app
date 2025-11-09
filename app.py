@@ -447,10 +447,10 @@ def create_fallback_model():
 
 
 MODEL_PATHS = {
-    "🌿 Decision Tree": "./DecisionTree.pkl",
     "🌾 Random Forest": "./RandomForest.pkl",
     "🌱 NB Classifier": "./NBClassifier.pkl",
     "🌽 Logistic Regression": "./LogisticRegression.pkl",
+    "🌿 Decision Tree": "./DecisionTree.pkl",
 }
 
 
